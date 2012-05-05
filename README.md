@@ -36,7 +36,7 @@ Functionality:
 Creating a playlist:
 ------------------------------------
 
-All playlists are wrapped in &lt;playlist> and &lt;/playlist>. Each song is defined
+All playlists are wrapped in &lt;playlist> and &lt;/playlist> tags. Each song is defined
 by putting the path to the file in between &lt;song> and &lt;/song> tags. That's it!
 
 Here's an example playlist.xml file:
@@ -44,10 +44,10 @@ Here's an example playlist.xml file:
 <pre>
 &lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;playlist>
-    &lt;song>music/song1.mp3</song>
-    &lt;song>music/song2.mp3</song>
-    &lt;song>music/song3.mp3</song>
-    &lt;song>music/song4.mp3</song>
+    &lt;song>music/song1.mp3&lt;/song>
+    &lt;song>music/song2.mp3&lt;/song>
+    &lt;song>music/song3.mp3&lt;/song>
+    &lt;song>music/song4.mp3&lt;/song>
 &lt;/playlist>
 </pre>
 
