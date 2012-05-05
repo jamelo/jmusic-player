@@ -18,7 +18,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see 
-<[http://www.gnu.org/licenses/](http://www.gnu.org/licenses/)>.
+&lt;[http://www.gnu.org/licenses/](http://www.gnu.org/licenses/)>.
 
 ---------------------------------------------------------------------------
 
@@ -42,13 +42,13 @@ by putting the path to the file in between <song> and </song> tags. That's it!
 Here's an example playlist.xml file:
 
 <pre>
-<?xml version="1.0" encoding="UTF-8"?>
-<playlist>
-    <song>music/song1.mp3</song>
-    <song>music/song2.mp3</song>
-    <song>music/song3.mp3</song>
-    <song>music/song4.mp3</song>
-</playlist>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;playlist>
+    &lt;song>music/song1.mp3</song>
+    &lt;song>music/song2.mp3</song>
+    &lt;song>music/song3.mp3</song>
+    &lt;song>music/song4.mp3</song>
+&lt;/playlist>
 </pre>
 
 
@@ -59,22 +59,22 @@ In your HTML document, make sure you:
 
 1. Always allow script access to the Flash object.
 2. Set flashvars to
-    - vpls=PATHTOPLAYLIST&vsng= if you would like it to initially be loaded
+    - "vpls=PATHTOPLAYLIST&vsng=" if you would like it to initially be loaded
       with a playlist, replacing PATHTOPLAYLIST with the path to your XML
       playlist file, or
-    - vpls=&vsng=PATHTOSONG if you would like it to initially be loaded
+    - "vpls=&vsng=PATHTOSONG" if you would like it to initially be loaded
       with a song, where PATHTOSONG is the path to the audio file.
 
 Example player embed code:
 
 <pre>
-<object width="550" height="550" id="player">
-    <param name="movie" value="player.swf">
-    <param name="allowScriptAccess" value="always" />
-    <param name="FlashVars" value="vpls=playlist.xml&vsng=" />
-    <embed src="player.swf" width="550" height="540" allowScriptAccess="always"
-        name="player" FlashVars="vpls=playlist.xml&vsng="></embed>
-</object>
+&lt;object width="550" height="550" id="player">
+    &lt;param name="movie" value="player.swf">
+    &lt;param name="allowScriptAccess" value="always" />
+    &lt;param name="FlashVars" value="vpls=playlist.xml&vsng=" />
+    &lt;embed src="player.swf" width="550" height="540" allowScriptAccess="always"
+        name="player" FlashVars="vpls=playlist.xml&vsng=">&lt;/embed>
+&lt;/object>
 </pre>
 
 
@@ -85,7 +85,7 @@ Use the sendCommand(string) callback to tell the player to load a song or
 playlist. Command strings are formatted like this:
 
 <pre>
-load|enqueue song|playlist <filepath>
+load|enqueue song|playlist &lt;filepath>
 </pre>
 
 Examples commands:
