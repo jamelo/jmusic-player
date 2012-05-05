@@ -36,8 +36,8 @@ Functionality:
 Creating a playlist:
 ------------------------------------
 
-All playlists are wrapped in <playlist> and </playlist>. Each song is defined
-by putting the path to the file in between <song> and </song> tags. That's it!
+All playlists are wrapped in &lt;playlist> and &lt;/playlist>. Each song is defined
+by putting the path to the file in between &lt;song> and &lt;/song> tags. That's it!
 
 Here's an example playlist.xml file:
 
@@ -78,7 +78,7 @@ Example player embed code:
 </pre>
 
 
-Interfacing with the Player with Javascript:
+Interfacing with the Player using Javascript:
 --------------------------------------------
 
 Use the sendCommand(string) callback to tell the player to load a song or
